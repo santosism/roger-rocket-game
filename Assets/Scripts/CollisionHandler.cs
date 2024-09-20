@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float levelLoadDelay = 2f; 
     
     void OnCollisionEnter(Collision other)
     {
@@ -10,22 +11,33 @@ public class CollisionHandler : MonoBehaviour
         {
             
             case "Friendly":
-                Debug.Log("You bumped into a friendly one!");
+                Debug.Log("Friendly jump!");
                 break;
-
             case "Finish":
-                LoadNextLevel();
+                StartSuccessSequence();                 
                 break;
-
-            case "Fuel":
-                Debug.Log("In space, no one can hear you pick up even more jet fuel...maybe");
-                break;
-
             default:
-                ReloadLevel();
+                StartCrashSequence();
                 break; 
 
         }
+    }
+
+    void StartSuccessSequence() 
+    {
+        // todo add SFX upon crash
+        // todo add particle effect upon crash
+        GetComponent<Movement>().enabled = false; 
+        Invoke("LoadNextLevel", levelLoadDelay);
+
+    }
+
+    void StartCrashSequence()
+    {
+        // todo add SFX upon crash
+        // todo add particle effect upon crash
+        GetComponent<Movement>().enabled = false; 
+        Invoke("ReloadLevel", levelLoadDelay);
     }
 
     void ReloadLevel()
