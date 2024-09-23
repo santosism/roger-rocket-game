@@ -495,14 +495,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1104194431428179920, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: crashSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 81378d0c0bba1d04691ec965e225f5f2, type: 3}
-    - target: {fileID: 1104194431428179920, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: landingFinish
-      value: 
-      objectReference: {fileID: 8300000, guid: 6f1172a570f00384ebe2f986ce0c3f7b, type: 3}
     - target: {fileID: 1402454782899894399, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.524954
@@ -542,14 +534,6 @@ PrefabInstance:
     - target: {fileID: 1402454782899894399, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3131227235388665618, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 79aa7573fa9c1384881fbcc90576d568, type: 3}
-    - target: {fileID: 3527463955574094726, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: m_audioClip
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8131142475440036496, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
       propertyPath: m_Name

@@ -535,14 +535,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3131227235388665618, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 79aa7573fa9c1384881fbcc90576d568, type: 3}
-    - target: {fileID: 3527463955574094726, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8131142475440036496, guid: 52f3d77ed0a373a4081b878290c663fa, type: 3}
       propertyPath: m_Name
       value: Rocket

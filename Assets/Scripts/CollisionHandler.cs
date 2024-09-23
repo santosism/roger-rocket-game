@@ -9,6 +9,8 @@ public class CollisionHandler : MonoBehaviour
 
     AudioSource audioSource;
 
+    bool isTransitioning = false;
+
     void Start()
     {
 
@@ -20,6 +22,8 @@ public class CollisionHandler : MonoBehaviour
     
     void OnCollisionEnter(Collision other)
     {
+        if (isTransitioning) { return; }
+
         switch (other.gameObject.tag)
         {
             
@@ -38,6 +42,8 @@ public class CollisionHandler : MonoBehaviour
 
     void StartSuccessSequence() 
     {
+        isTransitioning = true;
+        audioSource.Stop();
         audioSource.PlayOneShot(landingFinish);
 
         // todo add SFX upon crash
@@ -49,6 +55,8 @@ public class CollisionHandler : MonoBehaviour
 
     void StartCrashSequence()
     {
+        isTransitioning = true;
+        audioSource.Stop();
         // todo add SFX upon crash
         // todo add particle effect upon crash
         audioSource.PlayOneShot(crashSound);
